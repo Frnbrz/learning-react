@@ -1,5 +1,5 @@
 const baseUrl = "https://catfact.ninja/fact";
 
-export const getFact = async () => {
-  return await fetch(baseUrl).then((response) => response.json());
+export const getFact = () => {
+  return fetch(baseUrl).then((res) => res.json())
 };

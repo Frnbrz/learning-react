@@ -1,5 +1,5 @@
-const baseUrl  = "https://cataas.com/cat/says/";
+const baseUrl = "https://cataas.com/cat/says/";
 
 export const getImage = async (fact) => {
-  return await fetch(`${baseUrl}${fact}`).then((response) => response.json());
+  return await fetch(`${baseUrl}${fact}`).then((res) => res.json());
 };
